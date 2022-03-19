@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+     <div class="formcontainer">
+<h1>Language summary</h1>
+
+<form action="#" method="post">
+    <p>Text input:</p>
+    <p><textarea cols="40", rows="5" name="textInput">Beliebiger Text eingeben</textarea></p>
+    <p><input style="width: 50px;" type="checkbox" id="translated" name="translated" value="on"/><label for="translated">Already translated</label></p>
+    <!--<p><input style="width:50px;" type="number" id="wordsplit" name="wordsplit" min="500" max="5000"/><label for="wordsplit">Number of words to split</label></p>-->
+    <p><input style="width:100px" type="text" id="advisor" name="advisor"><label for="advisor">Advisor name</label> </p>
+        <p><input style="width:100px" type="text" id="customer" name="customer"><label for="customer">Customer name</label> </p>
+
+    <p><input type="submit" value="submit"/></p>
+</form>
+    </div>
+{% endblock %}
