@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+     <div class="formcontainer">
+<h1>Language summary</h1>
+<p>Either fill the dialogue to be summarised into the text field or upload a text file using the "Browse" button. The text file must have the following structure:</p>
+        <p><textarea cols="40", rows="5" name="textInput">ADVISOR: A sentence of an arbitrary statement.&#13;&#10;Another sentence.&#13;&#10;&#13;&#10;CUSTOMER: A response to the statement.&#13;&#10;&#13;&#10;ADVISOR: The next arbitrary statement.</textarea></p>
+     <p>If the dialog is already translated to english, you can check the checkbox "already translated". This prevents the paid API request for the translation.</p>
+     <p>In the next input form, you can choose into how much words, the text is split for each pass of the summarizing model. This changes the length and the accuracy of the resulting summary.</p>
+     <p>At the end, you can specify the names of the advisor and the customer. This leads to a better result because the model looses all its context information after each pass including the names.</p>
+    </div>
+{% endblock %}

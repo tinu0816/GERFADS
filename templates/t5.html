@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="formcontainer">
+    <h3>Introduction</h3>
+    <p> {{ intro }}</p>
+        <h3>Keydata</h3>
+<p>{{ keydata }}</p>
+        <h3>Portfolio</h3>
+        <p>{{  portfolio }}</p>
+        <h3>Summary</h3>
+        <p>{{ summary }}</p>
+
+<form action="#" method="POST"><input type="submit" value="back"/> </form>
+    <a href="{{ filename }}">Download summary</a>
+    </div>
+{% endblock %}
