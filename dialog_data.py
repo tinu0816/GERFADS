@@ -71,7 +71,7 @@ class DialogData:
         return_list = []
         return_list.append(self.return_nr_of_elements(self.intro, 500))
         return_list.append(self.return_nr_of_elements(self.keydata, 400))
-        return_list.append(self.return_nr_of_elements(self.portfolio, 200))
+        return_list.append(self.return_nr_of_elements(self.portfolio, 300))
         return_list.append(self.return_nr_of_elements(self.summary, 200))
         return return_list
 
