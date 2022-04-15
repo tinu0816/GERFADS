@@ -62,6 +62,8 @@ def t5():
 
         separate_summary = dialog_parts[0]
         for text_element in separate_summary:
+            if len(text_element) == 0:
+                continue
             print(f"starting summarization with length {len(text_element)}...")
             summary = BARTGermanDialogs.summarize(model, text_element)
             summaries.append(summary)
@@ -70,6 +72,8 @@ def t5():
         summaries = []
         separate_summary = dialog_parts[1]
         for text_element in separate_summary:
+            if len(text_element) == 0:
+                continue
             print(f"starting summarization with length {len(text_element)}...")
             summary = BARTGermanDialogs.summarize(model, text_element)
             summaries.append(summary)
@@ -78,6 +82,8 @@ def t5():
         summaries = []
         separate_summary = dialog_parts[2]
         for text_element in separate_summary:
+            if len(text_element) == 0:
+                continue
             print(f"starting summarization with length {len(text_element)}...")
             summary = BARTGermanDialogs.summarize(model, text_element)
             summaries.append(summary)
@@ -86,6 +92,8 @@ def t5():
         summaries = []
         separate_summary = dialog_parts[3]
         for text_element in separate_summary:
+            if len(text_element) == 0:
+                continue
             print(f"starting summarization with length {len(text_element)}...")
             summary = BARTGermanDialogs.summarize(model, text_element)
             summaries.append(summary)
